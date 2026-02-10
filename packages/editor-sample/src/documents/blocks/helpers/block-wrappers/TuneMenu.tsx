@@ -11,7 +11,7 @@ import cloneDocumentBlock from '../cloneDocumentBlock';
 const sx: SxProps = {
   position: 'absolute',
   top: 0,
-  left: -56,
+  right: -56,
   borderRadius: 64,
   paddingX: 0.5,
   paddingY: 1,
@@ -229,22 +229,22 @@ export default function TuneMenu({ blockId }: Props) {
   return (
     <Paper sx={sx} onClick={(ev) => ev.stopPropagation()}>
       <Stack>
-        <Tooltip title="Move up" placement="left-start">
+        <Tooltip title="Move up" placement="right-start">
           <IconButton onClick={() => handleMoveClick('up')} sx={{ color: 'text.primary' }}>
             <ArrowUpwardOutlined fontSize="small" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Move down" placement="left-start">
+        <Tooltip title="Move down" placement="right-start">
           <IconButton onClick={() => handleMoveClick('down')} sx={{ color: 'text.primary' }}>
             <ArrowDownwardOutlined fontSize="small" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Duplicate" placement="left-start">
+        <Tooltip title="Duplicate" placement="right-start">
           <IconButton onClick={handleDuplicateClick} sx={{ color: 'text.primary' }}>
             <ContentCopyOutlined fontSize="small" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Delete" placement="left-start">
+        <Tooltip title="Delete" placement="right-start">
           <IconButton onClick={handleDeleteClick} sx={{ color: 'text.primary' }}>
             <DeleteOutlined fontSize="small" />
           </IconButton>
