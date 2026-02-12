@@ -41,10 +41,10 @@ export default function EmailLayoutEditor(props: EmailLayoutProps) {
         setSelectedBlockId(null);
       }}
       style={{
-        backgroundColor: props.backdropColor ?? '#F5F5F5',
+        backgroundColor: props.backdropColor ?? '#FFFFFF',
         color: props.textColor ?? '#262626',
         fontFamily: getFontFamily(props.fontFamily),
-        fontSize: '16px',
+        fontSize: '14px',
         fontWeight: '400',
         letterSpacing: '0.15008px',
         lineHeight: '1.5',

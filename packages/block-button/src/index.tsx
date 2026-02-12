@@ -120,10 +120,10 @@ export const ButtonPropsDefaults = {
   text: '',
   url: '',
   fullWidth: false,
-  size: 'medium',
+  size: 'small',
   buttonStyle: 'rounded',
   buttonTextColor: '#FFFFFF',
-  buttonBackgroundColor: '#999999',
+  buttonBackgroundColor: '#000000',
 } as const;
 
 export function Button({ style, props }: ButtonProps) {
@@ -142,9 +142,9 @@ export function Button({ style, props }: ButtonProps) {
   };
   const linkStyle: CSSProperties = {
     color: buttonTextColor,
-    fontSize: style?.fontSize ?? 16,
+    fontSize: style?.fontSize ?? 14,
     fontFamily: getFontFamily(style?.fontFamily),
-    fontWeight: style?.fontWeight ?? 'bold',
+    fontWeight: style?.fontWeight ?? 'normal',
     backgroundColor: buttonBackgroundColor,
     borderRadius: getRoundedCorners(props),
     display: fullWidth ? 'block' : 'inline-block',

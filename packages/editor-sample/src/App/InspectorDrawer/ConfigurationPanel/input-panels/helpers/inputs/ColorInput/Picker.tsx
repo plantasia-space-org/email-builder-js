@@ -25,7 +25,7 @@ const DEFAULT_PRESET_COLORS = [
   '#DC2626',
   '#FFFFFF',
   '#FAFAFA',
-  '#F5F5F5',
+  '#FFFFFF',
   '#E5E5E5',
   '#D4D4D4',
   '#A3A3A3',

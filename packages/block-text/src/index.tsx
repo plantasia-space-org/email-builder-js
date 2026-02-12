@@ -94,7 +94,7 @@ export function Text({ style, props }: TextProps) {
     color: style?.color ?? undefined,
     backgroundColor: style?.backgroundColor ?? undefined,
     fontSize: style?.fontSize ?? undefined,
-    fontFamily: getFontFamily(style?.fontFamily),
+    fontFamily: getFontFamily(style?.fontFamily ?? 'MODERN_SANS'),
     fontWeight: style?.fontWeight ?? undefined,
     textAlign: style?.textAlign ?? undefined,
     padding: getPadding(style?.padding),

@@ -4,8 +4,8 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#F5F5F5',
-      canvasColor: '#F5F5F5',
+      backdropColor: '#FFFFFF',
+      canvasColor: '#FFFFFF',
       textColor: '#242424',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
@@ -127,7 +127,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'ColumnsContainer',
     data: {
       style: {
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#FFFFFF',
         padding: {
           top: 16,
           bottom: 16,

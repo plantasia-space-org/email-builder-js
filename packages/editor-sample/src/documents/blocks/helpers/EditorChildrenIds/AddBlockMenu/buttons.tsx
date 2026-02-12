@@ -44,6 +44,7 @@ export const BUTTONS: TButtonProps[] = [
         style: {
           padding: { top: 16, bottom: 16, left: 24, right: 24 },
           fontWeight: 'normal',
+          fontFamily: 'MODERN_SANS',
         },
       },
     }),
@@ -57,9 +58,18 @@ export const BUTTONS: TButtonProps[] = [
       data: {
         props: {
           text: 'Button',
-          url: 'https://www.usewaypoint.com',
+          url: 'https://plantasia.space/',
+          buttonBackgroundColor: '#000000',
+          buttonTextColor: '#FFFFFF',
+          size: 'small',
+          buttonStyle: 'rounded',
+          fullWidth: false,
         },
-        style: { padding: { top: 16, bottom: 16, left: 24, right: 24 } },
+        style: {
+          fontSize: 14,
+          fontWeight: 'normal',
+          padding: { top: 16, bottom: 16, left: 24, right: 24 },
+        },
       },
     }),
   },
