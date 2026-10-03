@@ -8,9 +8,9 @@ This repo lives inside the `ps-be` multi-repo workspace. Read the workspace guar
 
 This repo uses the **ps-local-workflow**. Before editing files:
 
-- Do NOT do feature work in the primary checkout on trunk (`dev`/`main`) — it is blocked at commit time by a git hook.
-- If you are not already inside a `…/<repo>.worktrees/wt-N` directory, claim a slot first:
-  `bash ~/Documents/Github/ps-all/.ps-preview/wt-new.sh <repo-path-under-ps-all> <slot 1-4> [label]`
-  then `cd` into that worktree and work there. Commit on the `wt/N` branch, then merge to trunk.
+- Don't do feature work in the primary checkout on trunk (`dev`/`main`). A git hook enforces this only for repos in `.ps-preview/enforce.list`; everywhere else it's discipline.
+- If you are not already inside a `…/<repo>.worktrees/wt-N` directory, claim a free slot:
+  `~/Documents/Github/ps-all/.ps-preview/wt-claim.sh <repo-path-under-ps-all>`
+  then `cd` into the path it prints. Commit on the `wt/N` branch, then merge to trunk.
 - Full skill: `~/Documents/Github/ps-all/skills-in-use/ps-local-workflow/SKILL.md`
 <!-- ps-local-workflow:end -->
